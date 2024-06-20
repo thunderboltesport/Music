@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b45154 0%, #faf0c4 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(218, 214, 214, 0.9);
+    padding: 20px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Set width to 80% of the viewport width */
+    max-width: 500px;
+    margin-top: 200px; /* 10% margin from top and bottom, auto horizontal margin for centering */
+    /* margin-bottom:  */
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#songs-list {
+    margin-bottom: 20px;
+}
+
+.song {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 10px;
+    }
+
+    #search {
+        max-width: 100%;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
